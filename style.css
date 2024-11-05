@@ -1,0 +1,170 @@
+h1 {
+    color: rgb(167, 115, 216);
+}
+
+body {
+    font-family: Georgia, serif;
+}
+
+h2 :visited{
+    color: lightcyan;
+}
+
+h2:hover {
+    color: rgb(221, 171, 217);
+    text-decoration: none;
+}
+
+.feedback {
+    margin-top: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+li:hover {
+    color: blueviolet;
+}
+
+.wrap {
+    width: 300px;
+    height: 350px;
+    /* overflow: hidden; */
+    margin: 20px;
+    border-radius: 15%;
+}
+
+.wrap:hover {
+    border: 2px solid salmon;
+}
+
+#game {
+    margin: 20px;
+    margin-top: 40px;
+    border-radius: 15%;
+}
+
+#game:hover {
+    border: 2px solid salmon;
+}
+
+#abstract {
+    margin: 20px;
+    margin-top: 40px;
+    width: 300px;
+    border-radius: 15%;
+}
+
+#abstract:hover {
+    border: 2px solid salmon;
+}
+
+button {
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    right: 250px;
+    top: 30px;
+    margin: 15px;
+    padding: 12px;
+    border: 1px;
+    border-radius: 10px;
+    border-color: rgb(168, 67, 67);
+    background-color: rgb(224, 108, 95);
+    letter-spacing: 1px;
+}
+
+button:hover {
+    color: black;
+    background-color: darksalmon;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+input[type="radio"] + label {
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    padding: 18px;
+    border-color: darksalmon;
+    background-color: rgb(248, 245, 245);
+    border-radius: 5px;
+    
+}
+legend {
+    color: darksalmon;
+}
+
+#registration {
+    font-size: 11px;
+    margin: 8px;
+    padding: 10px;
+    position: static;
+    left: 30px;
+    bottom: 300;
+    background-color: white;
+    border: 2px solid darksalmon;
+    color: black;
+}
+
+#registration:hover {
+    color: darkred;
+    border-color: darkred;
+}
+
+input[type="name"],
+input[type="password"],
+input[type="email"] {
+    margin: 5px;
+    margin-bottom: 50px;
+}
+
+input[type="name"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+    border-color: rgb(221, 171, 217);
+}
+
+#icon {
+    color: rgb(200, 176, 223);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) { 
+    background-color: rgb(248, 245, 245);
+}
+tr:hover {
+    background-color: #ddd;
+}

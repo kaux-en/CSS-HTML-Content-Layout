@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multmedia Web Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+    <header>
+        <h1>Mr.Mario</h1>
+    </header>
+    <ul>
+        <i class="fa fa-cloud" id="icon"></i>
+        <li>Home</li>
+        <i class="fa fa-cloud" id="icon"></i>
+        <li>About</li>
+        <i class="fa fa-cloud" id="icon"></i>
+        <li>Services</li>
+        <i class="fa fa-cloud" id="icon"></i>
+        <li>Contact</li>
+    </ul>
+    <nav>
+        <h2>Homepage</h2>
+        <section>
+            <h3 style="color: blue" style="font-family: Georgia;"></h3>
+            <br>
+            <!----<div class="wrap"> -->
+            <img class="wrap" src="https://m.media-amazon.com/images/M/MV5BNGU4NGQ4NjYtMWI3Ni00MDNkLWJmZTEtNzg0N2MyYjk0YzgxXkEyXkFqcGc@._V1_.jpg" width="300" height="400" alt="Poster of the Super Mario Bros Film">
+        
+            <button type="submit">Watch Now</button>
+
+            <br>
+            <img id="game" src="https://people.com/thmb/cK_RpydkLMmjxyqe3vOqksRVXuI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(719x207:721x209)/super-mario-bros-2026fec1a6fc4e1fbbe6f0bbb3adedab.jpg" width="300" height="200" alt="Screenshot of Mario and Luigi jumping over a Prianha Plant with Koopa troopa posing on a power-up box">
+
+            <button type="submit">Play Game</button>
+
+            <br>    
+            <img id="abstract" src="https://i.etsystatic.com/41791548/r/il/42c81e/5728538190/il_340x270.5728538190_exk7.jpg" alt="Abstract photo of neon colored Mario from Super Mario bros ">
+
+            <button type="submit">Listen Here</button>
+        </section>
+
+
+        <section>
+        <h2 class="feedback">Feedback Form</h2>
+
+        <form action="submit" method="post">
+            <fieldset>
+                <legend>Feedback</legend>
+
+                <label for="comments" style="font-size: 14px;">Comments:</label>
+                <textarea name="comments" id="comments" rows="3" cols="40">Enter your comments</textarea>
+                <br>
+                <label for="ratings" style="font-size: 14px;">Ratings:</label>
+                <input type="radio" name="rating" id="good-rating">
+                <label for="good-rating">This was Awesome</label>
+                <input type="radio" name="rating" id="neutral-rating">
+                <label for="neutral-rating">It was alright</label>
+                <input type="radio" name="rating"   id="bad-rating">
+                <label for="bad-rating">Try again</label>
+
+
+            </fieldset>
+        </form>
+        </section>
+    </nav>
+    <br>
+    <section>
+        <form action="submit">
+
+            <h2>Registration Form</h2>
+
+            <label for="name">Name</label>
+            <input type="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <button type="submit" id="registration">Submit</button>
+        </form>
+    </section>
+
+    <table border="1">
+        <tr>
+            <th>Release Date</th>
+            <th>Product List</th>
+            <th>Sold At:</th>
+        </tr>
+        <tr>
+            <td>Feb 26th, 2023</td>
+            <td>Luigi power-block figure</td>
+            <td>Target</td>
+        </tr>
+        <tr>
+            <td>April 5th, 2023</td>
+            <td>Koopa power-block figure</td>
+            <td>Target</td>
+        </tr>
+        <tr>
+            <td>July 25th, 2023</td>
+            <td>Mushroom Kingdom Castle Playset</td>
+            <td>Walmart</td>
+        </tr>
+    </table>
+</body>
+
+</html>
