@@ -2,52 +2,57 @@
 <html>
     <head>
         <title>Multmedia Web Page</title>
-        <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="style.css">-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         
     <header>
-        <h1>Mr.Mario</h1>
+        <h1 class="text-center">Mr.Mario</h1>
     </header>
-    <ul>
-        <i class="fa fa-cloud" id="icon"></i>
-        <li>Home</li>
-        <i class="fa fa-cloud" id="icon"></i>
-        <li>About</li>
-        <i class="fa fa-cloud" id="icon"></i>
-        <li>Services</li>
-        <i class="fa fa-cloud" id="icon"></i>
-        <li>Contact</li>
+    <ul class="list-unstyled text-center d-flex justify-content-center">
+        <i class="fa fa-cloud mt-3" id="icon"></i>
+        <li class="px-3 mt-3">Home</li>
+        <i class="fa fa-cloud mt-3" id="icon"></i>
+        <li class="px-3 mt-3">About</li>
+        <i class="fa fa-cloud mt-3" id="icon"></i>
+        <li class="px-3 mt-3">Services</li>
+        <i class="fa fa-cloud mt-3" id="icon"></i>
+        <li class="px-3 mt-3">Contact</li>
     </ul>
     <nav>
-        <h2>Homepage</h2>
+        <h2 class="h3 bg-light">Homepage</h2>
         <section>
-            <h3 style="color: blue" style="font-family: Georgia;"></h3>
+            <div class="container">
             <br>
-            <!----<div class="wrap"> -->
-            <img class="wrap" src="https://m.media-amazon.com/images/M/MV5BNGU4NGQ4NjYtMWI3Ni00MDNkLWJmZTEtNzg0N2MyYjk0YzgxXkEyXkFqcGc@._V1_.jpg" width="300" height="400" alt="Poster of the Super Mario Bros Film">
+            <div class="row">
+                <div class="col">
+            <img class="wrap rounded-circle img-fluid" src="https://m.media-amazon.com/images/M/MV5BNGU4NGQ4NjYtMWI3Ni00MDNkLWJmZTEtNzg0N2MyYjk0YzgxXkEyXkFqcGc@._V1_.jpg" width="300" height="400" alt="Poster of the Super Mario Bros Film">
         
-            <button type="submit">Watch Now</button>
-
+            <button type="submit" class=" btn btn-primary">Watch Now</button>
+                </div>
             <br>
-            <img id="game" src="https://people.com/thmb/cK_RpydkLMmjxyqe3vOqksRVXuI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(719x207:721x209)/super-mario-bros-2026fec1a6fc4e1fbbe6f0bbb3adedab.jpg" width="300" height="200" alt="Screenshot of Mario and Luigi jumping over a Prianha Plant with Koopa troopa posing on a power-up box">
+            <div class="col">
+            <img id="game" class="rounded-circle img-fluid" src="https://people.com/thmb/cK_RpydkLMmjxyqe3vOqksRVXuI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(719x207:721x209)/super-mario-bros-2026fec1a6fc4e1fbbe6f0bbb3adedab.jpg" width="300" height="200" alt="Screenshot of Mario and Luigi jumping over a Prianha Plant with Koopa troopa posing on a power-up box">
 
-            <button type="submit">Play Game</button>
+            <button type="submit" class="btn btn-primary">Play Game</button>
+            </div>
+            <br>   
+            <div class="col"> 
+            <img id="abstract" class="rounded-circle img-fluid" src="https://i.etsystatic.com/41791548/r/il/42c81e/5728538190/il_340x270.5728538190_exk7.jpg" alt="Abstract photo of neon colored Mario from Super Mario bros ">
 
-            <br>    
-            <img id="abstract" src="https://i.etsystatic.com/41791548/r/il/42c81e/5728538190/il_340x270.5728538190_exk7.jpg" alt="Abstract photo of neon colored Mario from Super Mario bros ">
-
-            <button type="submit">Listen Here</button>
+            <button type="submit" class="btn btn-primary">Listen Here</button>
+            </div>
+            </div>
+            </div>
         </section>
 
 
         <section>
-        <h2 class="feedback">Feedback Form</h2>
+        <h2 class="h3 mt-5 pb-2 bg-light">Feedback Form</h2>
 
         <form action="submit" method="post">
-            <fieldset>
-                <legend>Feedback</legend>
 
                 <label for="comments" style="font-size: 14px;">Comments:</label>
                 <textarea name="comments" id="comments" rows="3" cols="40">Enter your comments</textarea>
@@ -59,9 +64,6 @@
                 <label for="neutral-rating">It was alright</label>
                 <input type="radio" name="rating"   id="bad-rating">
                 <label for="bad-rating">Try again</label>
-
-
-            </fieldset>
         </form>
         </section>
     </nav>
@@ -69,7 +71,7 @@
     <section>
         <form action="submit">
 
-            <h2>Registration Form</h2>
+            <h2 class="h3 bg-light">Registration Form</h2>
 
             <label for="name">Name</label>
             <input type="name" id="name" placeholder="Enter your name" required>
@@ -78,11 +80,12 @@
             <label for="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password" required>
 
-            <button type="submit" id="registration">Submit</button>
+            <button type="submit" id="registration" class="btn btn-secondary">Submit</button>
         </form>
     </section>
 
-    <table border="1">
+    <div class="table-responsive pt-5">
+    <table border="1"class="table table-striped">
         <tr>
             <th>Release Date</th>
             <th>Product List</th>
@@ -104,6 +107,12 @@
             <td>Walmart</td>
         </tr>
     </table>
+    </div>
+    <footer class="pt-5">
+        <div class="container"></div>
+        <p class="text-center">&copy; Kiara Anderson HTML Bootstrap Content -<a href="link.com">Contact Me</a></p>
+    </div>
+    </footer>
 </body>
 
 </html>
